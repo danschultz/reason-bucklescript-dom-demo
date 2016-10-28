@@ -1,0 +1,32 @@
+<html>
+<head>
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+  <script>
+    SystemJS.config({
+      packages: {
+        "client": {
+          main: "client.js"
+        },
+        "bs-platform": {
+          defaultExtension: "js"
+        }
+      },
+      map: {
+        "client": "./_build/client/src",
+        "bs-platform": "./node_modules/bs-platform"
+      }
+    });
+  </script>
+  <script>
+    System.import("client").then((module) => {
+      module.main();
+    });
+  </script>
+</head>
+<body>
+  <div class="box">
+    <button class="button">Hi</button>
+  </div>
+  <div class="box"></div>
+</body>
+</html>
