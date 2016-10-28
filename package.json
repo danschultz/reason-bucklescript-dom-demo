@@ -31,7 +31,8 @@
     "top": "eval $(dependencyEnv) && rtop",
     "env": "eval $(dependencyEnv) && env",
     "editor": "eval $(dependencyEnv) && eval $EDITOR",
-    "whereisocamlmerlin": "eval $(dependencyEnv) && which ocamlmerlin-reason"
+    "whereisocamlmerlin": "eval $(dependencyEnv) && which ocamlmerlin-reason",
+    "serve": "http-server"
   },
   "dependencies": {
     "@opam-alpha/merlin": "^ 2.5.0",
